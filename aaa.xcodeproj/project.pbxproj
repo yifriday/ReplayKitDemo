@@ -7,21 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1729C0CC24B4713300B571AB /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729C0A224B4713300B571AB /* libyuv.a */; };
+		1729C0CD24B4713300B571AB /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729C0A224B4713300B571AB /* libyuv.a */; };
+		1729C0CE24B4713300B571AB /* NTESYUVConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0B924B4713300B571AB /* NTESYUVConverter.mm */; };
+		1729C0CF24B4713300B571AB /* NTESYUVConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0B924B4713300B571AB /* NTESYUVConverter.mm */; };
+		1729C0D024B4713300B571AB /* NTESVideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0BD24B4713300B571AB /* NTESVideoUtil.m */; };
+		1729C0D124B4713300B571AB /* NTESVideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0BD24B4713300B571AB /* NTESVideoUtil.m */; };
+		1729C0D224B4713300B571AB /* NTESI420Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0BE24B4713300B571AB /* NTESI420Frame.m */; };
+		1729C0D324B4713300B571AB /* NTESI420Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0BE24B4713300B571AB /* NTESI420Frame.m */; };
+		1729C0D424B4713300B571AB /* EKSampleHandlerSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0BF24B4713300B571AB /* EKSampleHandlerSocketManager.m */; };
+		1729C0D524B4713300B571AB /* EKSampleHandlerSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0BF24B4713300B571AB /* EKSampleHandlerSocketManager.m */; };
+		1729C0D624B4713300B571AB /* EKSampleHandlerClientSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C124B4713300B571AB /* EKSampleHandlerClientSocketManager.m */; };
+		1729C0D724B4713300B571AB /* EKSampleHandlerClientSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C124B4713300B571AB /* EKSampleHandlerClientSocketManager.m */; };
+		1729C0D824B4713300B571AB /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C624B4713300B571AB /* GCDAsyncSocket.m */; };
+		1729C0D924B4713300B571AB /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C624B4713300B571AB /* GCDAsyncSocket.m */; };
+		1729C0DA24B4713300B571AB /* NTESSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C824B4713300B571AB /* NTESSocket.m */; };
+		1729C0DB24B4713300B571AB /* NTESSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C824B4713300B571AB /* NTESSocket.m */; };
+		1729C0DC24B4713300B571AB /* NTESTPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C924B4713300B571AB /* NTESTPCircularBuffer.c */; };
+		1729C0DD24B4713300B571AB /* NTESTPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0C924B4713300B571AB /* NTESTPCircularBuffer.c */; };
+		1729C0DE24B4713300B571AB /* NTESSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0CB24B4713300B571AB /* NTESSocketPacket.m */; };
+		1729C0DF24B4713300B571AB /* NTESSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C0CB24B4713300B571AB /* NTESSocketPacket.m */; };
 		179C023224B0322B006C04CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C023124B0322B006C04CC /* AppDelegate.m */; };
-		179C023524B0322B006C04CC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C023424B0322B006C04CC /* SceneDelegate.m */; };
 		179C023824B0322B006C04CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C023724B0322B006C04CC /* ViewController.m */; };
 		179C023B24B0322B006C04CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179C023924B0322B006C04CC /* Main.storyboard */; };
 		179C023D24B03231006C04CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179C023C24B03231006C04CC /* Assets.xcassets */; };
 		179C024024B03231006C04CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179C023E24B03231006C04CC /* LaunchScreen.storyboard */; };
 		179C024324B03231006C04CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C024224B03231006C04CC /* main.m */; };
+		179C026624B2BC71006C04CC /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179C025124B2BAD2006C04CC /* ReplayKit.framework */; };
+		179C026A24B2BC71006C04CC /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 179C026924B2BC71006C04CC /* SampleHandler.m */; };
+		179C027D24B2BC72006C04CC /* replaykitupload.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 179C026524B2BC71006C04CC /* replaykitupload.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		179C027B24B2BC72006C04CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 179C022524B0322B006C04CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 179C026424B2BC71006C04CC;
+			remoteInfo = replaykitupload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1743226024B30A16001BD322 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179C025D24B2BAD2006C04CC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				179C027D24B2BC72006C04CC /* replaykitupload.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1729C0A124B4713300B571AB /* libyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		1729C0A224B4713300B571AB /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+		1729C0A424B4713300B571AB /* scale_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_row.h; sourceTree = "<group>"; };
+		1729C0A524B4713300B571AB /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		1729C0A624B4713300B571AB /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		1729C0A724B4713300B571AB /* cpu_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_id.h; sourceTree = "<group>"; };
+		1729C0A824B4713300B571AB /* video_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_common.h; sourceTree = "<group>"; };
+		1729C0A924B4713300B571AB /* compare_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare_row.h; sourceTree = "<group>"; };
+		1729C0AA24B4713300B571AB /* mjpeg_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mjpeg_decoder.h; sourceTree = "<group>"; };
+		1729C0AB24B4713300B571AB /* rotate_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_row.h; sourceTree = "<group>"; };
+		1729C0AC24B4713300B571AB /* planar_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planar_functions.h; sourceTree = "<group>"; };
+		1729C0AD24B4713300B571AB /* scale_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_argb.h; sourceTree = "<group>"; };
+		1729C0AE24B4713300B571AB /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		1729C0AF24B4713300B571AB /* convert_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_argb.h; sourceTree = "<group>"; };
+		1729C0B024B4713300B571AB /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		1729C0B124B4713300B571AB /* convert_from_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from_argb.h; sourceTree = "<group>"; };
+		1729C0B224B4713300B571AB /* basic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_types.h; sourceTree = "<group>"; };
+		1729C0B324B4713300B571AB /* convert_from.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from.h; sourceTree = "<group>"; };
+		1729C0B424B4713300B571AB /* convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		1729C0B524B4713300B571AB /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
+		1729C0B624B4713300B571AB /* macros_msa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros_msa.h; sourceTree = "<group>"; };
+		1729C0B724B4713300B571AB /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		1729C0B924B4713300B571AB /* NTESYUVConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NTESYUVConverter.mm; sourceTree = "<group>"; };
+		1729C0BA24B4713300B571AB /* NTESYUVConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESYUVConverter.h; sourceTree = "<group>"; };
+		1729C0BB24B4713300B571AB /* NTESI420Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESI420Frame.h; sourceTree = "<group>"; };
+		1729C0BC24B4713300B571AB /* NTESVideoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESVideoUtil.h; sourceTree = "<group>"; };
+		1729C0BD24B4713300B571AB /* NTESVideoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESVideoUtil.m; sourceTree = "<group>"; };
+		1729C0BE24B4713300B571AB /* NTESI420Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESI420Frame.m; sourceTree = "<group>"; };
+		1729C0BF24B4713300B571AB /* EKSampleHandlerSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKSampleHandlerSocketManager.m; sourceTree = "<group>"; };
+		1729C0C024B4713300B571AB /* EKSampleHandlerClientSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKSampleHandlerClientSocketManager.h; sourceTree = "<group>"; };
+		1729C0C124B4713300B571AB /* EKSampleHandlerClientSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKSampleHandlerClientSocketManager.m; sourceTree = "<group>"; };
+		1729C0C224B4713300B571AB /* EKSampleHandlerSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKSampleHandlerSocketManager.h; sourceTree = "<group>"; };
+		1729C0C424B4713300B571AB /* NTESTPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESTPCircularBuffer.h; sourceTree = "<group>"; };
+		1729C0C524B4713300B571AB /* NTESSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESSocket.h; sourceTree = "<group>"; };
+		1729C0C624B4713300B571AB /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		1729C0C724B4713300B571AB /* NTESSocketPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESSocketPacket.h; sourceTree = "<group>"; };
+		1729C0C824B4713300B571AB /* NTESSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESSocket.m; sourceTree = "<group>"; };
+		1729C0C924B4713300B571AB /* NTESTPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NTESTPCircularBuffer.c; sourceTree = "<group>"; };
+		1729C0CA24B4713300B571AB /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		1729C0CB24B4713300B571AB /* NTESSocketPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESSocketPacket.m; sourceTree = "<group>"; };
 		179C022D24B0322B006C04CC /* aaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179C023024B0322B006C04CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		179C023124B0322B006C04CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		179C023324B0322B006C04CC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		179C023424B0322B006C04CC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		179C023624B0322B006C04CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		179C023724B0322B006C04CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		179C023A24B0322B006C04CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +123,12 @@
 		179C023F24B03231006C04CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179C024124B03231006C04CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179C024224B03231006C04CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		179C025124B2BAD2006C04CC /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		179C025324B2BAD2006C04CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		179C026524B2BC71006C04CC /* replaykitupload.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = replaykitupload.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		179C026824B2BC71006C04CC /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		179C026924B2BC71006C04CC /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		179C026B24B2BC71006C04CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,16 +136,108 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729C0CC24B4713300B571AB /* libyuv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179C026224B2BC71006C04CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1729C0CD24B4713300B571AB /* libyuv.a in Frameworks */,
+				179C026624B2BC71006C04CC /* ReplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1729C09F24B4713300B571AB /* ReplayKitSampleBufferSocket */ = {
+			isa = PBXGroup;
+			children = (
+				1729C0C024B4713300B571AB /* EKSampleHandlerClientSocketManager.h */,
+				1729C0C124B4713300B571AB /* EKSampleHandlerClientSocketManager.m */,
+				1729C0C224B4713300B571AB /* EKSampleHandlerSocketManager.h */,
+				1729C0BF24B4713300B571AB /* EKSampleHandlerSocketManager.m */,
+				1729C0C324B4713300B571AB /* Socket */,
+				1729C0A024B4713300B571AB /* Vendors */,
+				1729C0B824B4713300B571AB /* Video */,
+			);
+			path = ReplayKitSampleBufferSocket;
+			sourceTree = "<group>";
+		};
+		1729C0A024B4713300B571AB /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				1729C0A124B4713300B571AB /* libyuv.h */,
+				1729C0A224B4713300B571AB /* libyuv.a */,
+				1729C0A324B4713300B571AB /* libyuv */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		1729C0A324B4713300B571AB /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				1729C0A424B4713300B571AB /* scale_row.h */,
+				1729C0A524B4713300B571AB /* scale.h */,
+				1729C0A624B4713300B571AB /* version.h */,
+				1729C0A724B4713300B571AB /* cpu_id.h */,
+				1729C0A824B4713300B571AB /* video_common.h */,
+				1729C0A924B4713300B571AB /* compare_row.h */,
+				1729C0AA24B4713300B571AB /* mjpeg_decoder.h */,
+				1729C0AB24B4713300B571AB /* rotate_row.h */,
+				1729C0AC24B4713300B571AB /* planar_functions.h */,
+				1729C0AD24B4713300B571AB /* scale_argb.h */,
+				1729C0AE24B4713300B571AB /* compare.h */,
+				1729C0AF24B4713300B571AB /* convert_argb.h */,
+				1729C0B024B4713300B571AB /* rotate.h */,
+				1729C0B124B4713300B571AB /* convert_from_argb.h */,
+				1729C0B224B4713300B571AB /* basic_types.h */,
+				1729C0B324B4713300B571AB /* convert_from.h */,
+				1729C0B424B4713300B571AB /* convert.h */,
+				1729C0B524B4713300B571AB /* rotate_argb.h */,
+				1729C0B624B4713300B571AB /* macros_msa.h */,
+				1729C0B724B4713300B571AB /* row.h */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		1729C0B824B4713300B571AB /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				1729C0BB24B4713300B571AB /* NTESI420Frame.h */,
+				1729C0BE24B4713300B571AB /* NTESI420Frame.m */,
+				1729C0BC24B4713300B571AB /* NTESVideoUtil.h */,
+				1729C0BD24B4713300B571AB /* NTESVideoUtil.m */,
+				1729C0BA24B4713300B571AB /* NTESYUVConverter.h */,
+				1729C0B924B4713300B571AB /* NTESYUVConverter.mm */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		1729C0C324B4713300B571AB /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				1729C0CA24B4713300B571AB /* GCDAsyncSocket.h */,
+				1729C0C624B4713300B571AB /* GCDAsyncSocket.m */,
+				1729C0C524B4713300B571AB /* NTESSocket.h */,
+				1729C0C824B4713300B571AB /* NTESSocket.m */,
+				1729C0C724B4713300B571AB /* NTESSocketPacket.h */,
+				1729C0CB24B4713300B571AB /* NTESSocketPacket.m */,
+				1729C0C924B4713300B571AB /* NTESTPCircularBuffer.c */,
+				1729C0C424B4713300B571AB /* NTESTPCircularBuffer.h */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		179C022424B0322B006C04CC = {
 			isa = PBXGroup;
 			children = (
+				1729C09F24B4713300B571AB /* ReplayKitSampleBufferSocket */,
 				179C022F24B0322B006C04CC /* aaa */,
+				179C026724B2BC71006C04CC /* replaykitupload */,
+				179C025024B2BAD2006C04CC /* Frameworks */,
 				179C022E24B0322B006C04CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				179C022D24B0322B006C04CC /* aaa.app */,
+				179C026524B2BC71006C04CC /* replaykitupload.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +256,6 @@
 			children = (
 				179C023024B0322B006C04CC /* AppDelegate.h */,
 				179C023124B0322B006C04CC /* AppDelegate.m */,
-				179C023324B0322B006C04CC /* SceneDelegate.h */,
-				179C023424B0322B006C04CC /* SceneDelegate.m */,
 				179C023624B0322B006C04CC /* ViewController.h */,
 				179C023724B0322B006C04CC /* ViewController.m */,
 				179C023924B0322B006C04CC /* Main.storyboard */,
@@ -74,6 +265,25 @@
 				179C024224B03231006C04CC /* main.m */,
 			);
 			path = aaa;
+			sourceTree = "<group>";
+		};
+		179C025024B2BAD2006C04CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				179C025124B2BAD2006C04CC /* ReplayKit.framework */,
+				179C025324B2BAD2006C04CC /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		179C026724B2BC71006C04CC /* replaykitupload */ = {
+			isa = PBXGroup;
+			children = (
+				179C026824B2BC71006C04CC /* SampleHandler.h */,
+				179C026924B2BC71006C04CC /* SampleHandler.m */,
+				179C026B24B2BC71006C04CC /* Info.plist */,
+			);
+			path = replaykitupload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,15 +296,35 @@
 				179C022924B0322B006C04CC /* Sources */,
 				179C022A24B0322B006C04CC /* Frameworks */,
 				179C022B24B0322B006C04CC /* Resources */,
+				179C025D24B2BAD2006C04CC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				179C027C24B2BC72006C04CC /* PBXTargetDependency */,
 			);
 			name = aaa;
 			productName = aaa;
 			productReference = 179C022D24B0322B006C04CC /* aaa.app */;
 			productType = "com.apple.product-type.application";
+		};
+		179C026424B2BC71006C04CC /* replaykitupload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179C028124B2BC72006C04CC /* Build configuration list for PBXNativeTarget "replaykitupload" */;
+			buildPhases = (
+				179C026124B2BC71006C04CC /* Sources */,
+				179C026224B2BC71006C04CC /* Frameworks */,
+				179C026324B2BC71006C04CC /* Resources */,
+				1743226024B30A16001BD322 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = replaykitupload;
+			productName = replaykitupload;
+			productReference = 179C026524B2BC71006C04CC /* replaykitupload.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +336,9 @@
 				ORGANIZATIONNAME = EkiSong;
 				TargetAttributes = {
 					179C022C24B0322B006C04CC = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					179C026424B2BC71006C04CC = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -124,6 +357,7 @@
 			projectRoot = "";
 			targets = (
 				179C022C24B0322B006C04CC /* aaa */,
+				179C026424B2BC71006C04CC /* replaykitupload */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +373,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		179C026324B2BC71006C04CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,14 +387,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1729C0DA24B4713300B571AB /* NTESSocket.m in Sources */,
+				1729C0D224B4713300B571AB /* NTESI420Frame.m in Sources */,
 				179C023824B0322B006C04CC /* ViewController.m in Sources */,
+				1729C0D624B4713300B571AB /* EKSampleHandlerClientSocketManager.m in Sources */,
+				1729C0DE24B4713300B571AB /* NTESSocketPacket.m in Sources */,
+				1729C0CE24B4713300B571AB /* NTESYUVConverter.mm in Sources */,
+				1729C0D024B4713300B571AB /* NTESVideoUtil.m in Sources */,
+				1729C0D424B4713300B571AB /* EKSampleHandlerSocketManager.m in Sources */,
+				1729C0DC24B4713300B571AB /* NTESTPCircularBuffer.c in Sources */,
+				1729C0D824B4713300B571AB /* GCDAsyncSocket.m in Sources */,
 				179C023224B0322B006C04CC /* AppDelegate.m in Sources */,
 				179C024324B03231006C04CC /* main.m in Sources */,
-				179C023524B0322B006C04CC /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179C026124B2BC71006C04CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1729C0DF24B4713300B571AB /* NTESSocketPacket.m in Sources */,
+				1729C0DD24B4713300B571AB /* NTESTPCircularBuffer.c in Sources */,
+				1729C0D524B4713300B571AB /* EKSampleHandlerSocketManager.m in Sources */,
+				179C026A24B2BC71006C04CC /* SampleHandler.m in Sources */,
+				1729C0DB24B4713300B571AB /* NTESSocket.m in Sources */,
+				1729C0D724B4713300B571AB /* EKSampleHandlerClientSocketManager.m in Sources */,
+				1729C0D124B4713300B571AB /* NTESVideoUtil.m in Sources */,
+				1729C0D324B4713300B571AB /* NTESI420Frame.m in Sources */,
+				1729C0D924B4713300B571AB /* GCDAsyncSocket.m in Sources */,
+				1729C0CF24B4713300B571AB /* NTESYUVConverter.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		179C027C24B2BC72006C04CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 179C026424B2BC71006C04CC /* replaykitupload */;
+			targetProxy = 179C027B24B2BC72006C04CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		179C023924B0322B006C04CC /* Main.storyboard */ = {
@@ -291,10 +565,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KN53KWRMZ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aaa",
+				);
 				INFOPLIST_FILE = aaa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReplayKitSampleBufferSocket/Vendors",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.EkiSong.aaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,13 +591,76 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KN53KWRMZ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aaa",
+				);
 				INFOPLIST_FILE = aaa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReplayKitSampleBufferSocket/Vendors",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.EkiSong.aaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		179C028224B2BC72006C04CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KN53KWRMZ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aaa",
+				);
+				INFOPLIST_FILE = replaykitupload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReplayKitSampleBufferSocket/Vendors",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EkiSong.aaa.replaykitupload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		179C028324B2BC72006C04CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KN53KWRMZ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/aaa",
+				);
+				INFOPLIST_FILE = replaykitupload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReplayKitSampleBufferSocket/Vendors",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EkiSong.aaa.replaykitupload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -336,6 +682,15 @@
 			buildConfigurations = (
 				179C024724B03231006C04CC /* Debug */,
 				179C024824B03231006C04CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179C028124B2BC72006C04CC /* Build configuration list for PBXNativeTarget "replaykitupload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179C028224B2BC72006C04CC /* Debug */,
+				179C028324B2BC72006C04CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,6 +9,33 @@
 #import "NTESSocketPacket.h"
 
 @implementation NTESSocketPacket
++ (NSData *)packetWithBufferLength:(NSUInteger)dataLength
+{
+    NSMutableData *mutableData = [NSMutableData data];
+    @autoreleasepool {
+        if (dataLength == 0)
+        {
+            return NULL;
+        }
+        static uint64_t serial_id = 0;
+        void *data = malloc(sizeof(NTESPacketHead));
+        NTESPacketHead *head = (NTESPacketHead *)malloc(sizeof(NTESPacketHead));
+        head->version = 1;
+        head->command_id = 1;
+        head->service_id = 1;
+        head->serial_id = serial_id++;
+        head->data_len = (uint32_t)dataLength;
+        
+        size_t headSize = sizeof(NTESPacketHead);
+        memcpy(data, head, headSize);
+        NSData *headData = [NSData dataWithBytes:data length:headSize];
+        [mutableData appendData:headData];
+        
+        free(data);
+        free(head);
+    }
+    return [mutableData copy];
+}
 
 + (NSData *)packetWithBuffer:(NSData *)rawData
 {

@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NTESSocketPacket : NSObject
 
++ (NSData *)packetWithBufferLength:(NSUInteger)dataLength;
 + (NSData *)packetWithBuffer:(NSData *)rawData;
 + (NSData *)packetWithBuffer:(NSData *)rawData head:(NTESPacketHead *)head;
 

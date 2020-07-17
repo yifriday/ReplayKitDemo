@@ -1,19 +1,21 @@
 //
-//  FIAgoraClientBufferSocketManager.m
-//  FIAgoraVideo
+//  EKSampleHandlerClientSocketManager.h
+//  aaa
 //
-//  Created by flagadmin on 2020/5/7.
-//  Copyright © 2020 flagadmin. All rights reserved.
+//  Created by EkiSong on 2020/7/7.
+//  Copyright © 2020 EkiSong. All rights reserved.
 //
+
+#import "EKSampleHandlerClientSocketManager.h"
+
 #import <ReplayKit/ReplayKit.h>
 #import "NTESYUVConverter.h"
 #import "NTESI420Frame.h"
 #import "GCDAsyncSocket.h"
 #import "NTESSocketPacket.h"
 #import "NTESTPCircularBuffer.h"
-#import "FIAgoraClientBufferSocketManager.h"
 
-@interface FIAgoraClientBufferSocketManager()<GCDAsyncSocketDelegate>
+@interface EKSampleHandlerClientSocketManager()<GCDAsyncSocketDelegate>
 @property (nonatomic, strong) GCDAsyncSocket *socket;
 @property (nonatomic, strong) dispatch_queue_t queue;
 @property (nonatomic, strong) NSMutableArray *sockets;
@@ -23,9 +25,9 @@
 
 @end
 
-@implementation FIAgoraClientBufferSocketManager
-+ (FIAgoraClientBufferSocketManager *)sharedManager{
-    static FIAgoraClientBufferSocketManager *shareInstance = nil;
+@implementation EKSampleHandlerClientSocketManager
++ (EKSampleHandlerClientSocketManager *)sharedManager{
+    static EKSampleHandlerClientSocketManager *shareInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         shareInstance = [[self alloc] init];
@@ -52,12 +54,10 @@
     self.sockets = [NSMutableArray array];
     _recvBuffer = (NTESTPCircularBuffer *)malloc(sizeof(NTESTPCircularBuffer)); // 需要释放
     NTESTPCircularBufferInit(_recvBuffer, kRecvBufferMaxSize);
-//    self.queue = dispatch_queue_create("com.netease.edu.rp.server", DISPATCH_QUEUE_SERIAL);
     self.queue = dispatch_get_main_queue();
     self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:self.queue];
     self.socket.IPv6Enabled = NO;
     NSError *error;
-    //    [self.socket acceptOnUrl:[NSURL fileURLWithPath:serverURL] error:&error];
     [self.socket acceptOnPort:8999 error:&error];
     [self.socket readDataWithTimeout:-1 tag:0];
     NSLog(@"%@", error);
@@ -211,18 +211,18 @@
 
 - (void)onRecvData:(NSData *)data
 {
-    static int i = 0;
-    i++;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NTESI420Frame *frame = [NTESI420Frame initWithData:data];
         CMSampleBufferRef sampleBuffer = [frame convertToSampleBuffer];
-        NSLog(@"收到了%d条数据", i);
-        NSString *testText = [NSString stringWithFormat:@"收到了%d条数据",i];
-        if (self.testBlock) {
-            self.testBlock(testText, sampleBuffer);
-        }
-    
-        CFRelease(sampleBuffer);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"CMSampleBufferRef:%@", sampleBuffer);
+            if (self.getBufferBlock) {
+                self.getBufferBlock(sampleBuffer);
+            }
+            if (sampleBuffer) {
+                CFRelease(sampleBuffer);
+            }
+        });
     });
     
 }

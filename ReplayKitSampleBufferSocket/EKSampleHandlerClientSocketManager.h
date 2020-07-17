@@ -1,23 +1,21 @@
 //
-//  FIAgoraClientBufferSocketManager.h
-//  FIAgoraVideo
+//  EKSampleHandlerClientSocketManager.h
+//  aaa
 //
-//  Created by flagadmin on 2020/5/7.
-//  Copyright © 2020 flagadmin. All rights reserved.
+//  Created by EkiSong on 2020/7/7.
+//  Copyright © 2020 EkiSong. All rights reserved.
 //
+
 #import <CoreMedia/CoreMedia.h>
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^TestBlock) (NSString *testText,CMSampleBufferRef sampleBuffer);
+typedef void(^GetBufferBlock) (CMSampleBufferRef sampleBuffer);
 
-@interface FIAgoraClientBufferSocketManager : NSObject
-+ (FIAgoraClientBufferSocketManager *)sharedManager;
+@interface EKSampleHandlerClientSocketManager : NSObject
++ (EKSampleHandlerClientSocketManager *)sharedManager;
 - (void)stopSocket;
 - (void)setupSocket;
-@property(nonatomic, copy) TestBlock testBlock;
-
-
+@property(nonatomic, copy) GetBufferBlock getBufferBlock;
 @end
-
 NS_ASSUME_NONNULL_END

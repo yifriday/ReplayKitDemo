@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, NTESI420FramePlane) {
 + (instancetype)initWithData:(NSData *)data;
 
 - (NSData *)bytes;
-
+- (void)getBytesQueue:(void (^)(NSData *data,NSInteger index))complete;
 - (id)initWithWidth:(int)w height:(int)h;
 
 - (UInt8 *)dataOfPlane:(NTESI420FramePlane)plane;
