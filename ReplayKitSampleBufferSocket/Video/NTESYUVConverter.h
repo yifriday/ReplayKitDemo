@@ -24,6 +24,8 @@ typedef NS_ENUM (uint8_t, NTESVideoPackOrientation) {
 
 + (NTESI420Frame *)pixelBufferToI420:(CVImageBufferRef)pixelBuffer;
 
++ (NTESI420Frame *)pixelBufferToI420:(CVImageBufferRef)pixelBuffer scale:(CGFloat)scale;
+
 + (CVPixelBufferRef)i420FrameToPixelBuffer:(NTESI420Frame *)i420Frame;
 
 + (CMSampleBufferRef)pixelBufferToSampleBuffer:(CVPixelBufferRef)pixelBuffer;

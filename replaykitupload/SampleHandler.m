@@ -13,7 +13,7 @@
 
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *, NSObject *> *)setupInfo {
     // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
-    sleep(1);//在pad上瞬时启动时，CPU和内存使用会暴增，所以延迟2s执行，避开高峰
+//    sleep(1);//在pad上瞬时启动时，CPU和内存使用会暴增，所以延迟2s执行，避开高峰
     [[EKSampleHandlerSocketManager sharedManager] setUpSocket];
 }
 
